@@ -1,8 +1,8 @@
 'use strict'
 
-function noop () {}
+function noop () { }
 
-module.exports = {
+const proto = {
   fatal: noop,
   error: noop,
   warn: noop,
@@ -10,3 +10,9 @@ module.exports = {
   debug: noop,
   trace: noop
 }
+
+Object.defineProperty(module, 'exports', {
+  get () {
+    return Object.create(proto)
+  }
+})

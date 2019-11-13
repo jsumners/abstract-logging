@@ -1,10 +1,10 @@
 {
   "name": "abstract-logging",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A noop logger that conforms to the Log4j interface for modules to stub out internal logging",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
