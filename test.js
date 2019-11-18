@@ -6,6 +6,8 @@ const one = require('./')
 const two = require('./')
 
 assert.notEqual(one, two)
+assert.ok(one.info)
+assert.equal(Function.prototype.isPrototypeOf(one.info), true)
 two.info = () => 'info'
 
 const result1 = one.info()
