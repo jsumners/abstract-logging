@@ -8,7 +8,8 @@ const proto = {
   warn: noop,
   info: noop,
   debug: noop,
-  trace: noop
+  trace: noop,
+  child: () => proto
 }
 
 Object.defineProperty(module, 'exports', {
