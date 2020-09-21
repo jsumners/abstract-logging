@@ -35,7 +35,7 @@ Available methods:
 
 All methods are no operation functions.
 
-Some loggers like Pino implement a `child()` method, which can be easily added to an `abstract-logging` instance in case it is needed:
+Some loggers, like [Pino](https://getpino.io/), implement a `child()` method. This method can be easily added to an `abstract-logging` instance when stubbing out such loggers:
 
 ```js
 const logger = require('abstract-logging')
